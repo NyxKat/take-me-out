@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.takemeout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TakeMeOut">
+        <activity android:name=".Categories"
+            android:parentActivityName=".WelcomePage"
+        />
+
+        <activity android:name=".XalaroPoto"
+            android:label="Χαλαρό Ποτό"
+            android:parentActivityName=".drink_categories"/>
+
+
+        <activity android:name=".drink_categories"
+            android:label="Ποτό"
+            android:parentActivityName=".Categories"/>
+
+        <activity android:name=".food_categories"
+            android:label="Φαγητό"
+            android:parentActivityName=".Categories"/>
+
+        <activity android:name=".WelcomePage">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".StreetFood"
+            android:label="Street Food"
+            android:parentActivityName=".food_categories">
+
+        </activity>
+
+        <activity android:name=".stores.food.Estrella"
+            android:label="Estrella"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.Falafel"
+            android:label="Falafel Taste Middle East"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+        <activity android:name=".stores.food.Brothers"
+            android:label="Brothers In Law"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.MpougatsaGiannis"
+            android:label="Μπουγάτσα Γιάννης"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.PizzaChris"
+            android:label="Pizza Chris"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.KritikoPerivoli"
+            android:label="Το Κρητικό Περιβόλι"
+            android:parentActivityName=".StreetFood">
+
+        </activity>
+
+        <activity android:name=".stores.food.Glikanisos"
+            android:label="Γλυκάνισος"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+        <activity android:name=".Taverns"
+            android:label="Ταβέρνες"
+            android:parentActivityName=".food_categories">
+
+        </activity>
+
+        <activity android:name=".stores.food.KivotosGeusewn"
+            android:label="Κιβωτός των Γεύσεων"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.NeaFolia"
+            android:label="Νέα Φωλιά"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.Negroponte"
+            android:label="Negroponte"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.OuzeriToNisi"
+            android:label="Ουζέρι το Νησί"
+            android:parentActivityName=".Taverns">
+
+        </activity>
+
+        <activity android:name=".stores.food.Palati"
+            android:label="Palati"
+            android:parentActivityName=".Taverns"/>
+
+        <!--parentActivityName paei to activity poy theloume na kanoume back me to backbutton
+            label einai o titlos pou tha exei to activity-->
+
+        <activity android:name=".stores.drinks.StoreParaty"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Paraty and Loft" />
+        <activity android:name=".stores.drinks.LenasBistro"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Lena's Bistro"/>
+        <activity android:name=".stores.drinks.Senor"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Senor"/>
+        <activity android:name=".stores.drinks.RedRoseBar"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Red Rose Bar"/>
+        <activity android:name=".stores.drinks.One"
+            android:parentActivityName=".XalaroPoto"
+            android:label="One"/>
+        <activity android:name=".stores.drinks.Local"
+            android:parentActivityName=".XalaroPoto"
+            android:label="Local"/>
+        <activity android:name=".Clubs"
+            android:label="Ποτό με δυνατή μουσική"
+            android:parentActivityName=".drink_categories"/>
+        <activity android:name=".Dance"
+            android:label="Ποτό με χορό"
+            android:parentActivityName=".drink_categories"/>
+
+        <activity android:name=".stores.drinks.Epu"
+            android:label="Epu Night Club"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Eightball"
+            android:label="8Ball Club"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Jadore"
+            android:label="J'adore Supreme Club"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Casper"
+            android:label="Casper at Verykoko"
+            android:parentActivityName=".Clubs"/>
+        <activity android:name=".stores.drinks.Trap"
+            android:label="TRAP BASEMENT"
+            android:parentActivityName=".Clubs"/>
+
+        <activity android:name=".stores.drinks.Xarhakos"
+            android:label="Ξαρχάκος coffee and drinks"
+            android:parentActivityName=".Dance"/>
+        <activity android:name=".stores.drinks.LaRosaNegra"
+            android:label="La Rosa Negra Latin Club"
+            android:parentActivityName=".Dance"/>
+        <activity android:name=".stores.drinks.TangoBar"
+            android:label="Tango Bar"
+            android:parentActivityName=".Dance"/>
+        <activity android:name=".stores.drinks.Habanita"
+            android:label="Habanita Latin Bar"
+            android:parentActivityName=".Dance"/>
+
+
+    </application>
+
+</manifest>
